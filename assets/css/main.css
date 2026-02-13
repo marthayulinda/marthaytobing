@@ -761,6 +761,46 @@ section,
 }
 
 /*--------------------------------------------------------------
+#Experience Section
+
+/* 1. Container Utama (Wajib Flexbox) */
+.tech-stack {
+  display: flex;       
+  flex-wrap: wrap;     
+  gap: 10px;           
+  margin-top: 15px;    
+}
+
+/* 2. Desain Badge (Bentuk Kapsul) */
+.tech-badge {
+  display: inline-flex;       
+  align-items: center;        
+  background-color: #ffffff;  
+  border: 1px solid #e0e0e0;  
+  border-radius: 20px;        
+  padding: 5px 12px;         
+  font-size: 13px;            
+  font-weight: 500;          
+  color: #333;              
+  transition: all 0.3s ease;  
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* 3. Efek saat Mouse Diarahkan (Hover) */
+.tech-badge:hover {
+  border-color: #b0b0b0;        
+  transform: translateY(-2px);   
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+
+/* 4. Pengaturan Icon di dalam Badge */
+.tech-badge i {
+  font-size: 16px;      
+  margin-right: 6px;    
+  display: block;    
+}
+
+/*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
 .portfolio .portfolio-filters {
